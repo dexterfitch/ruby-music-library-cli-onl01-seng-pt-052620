@@ -21,6 +21,7 @@ class MusicLibraryController
     while response != "exit"
       response = gets.chomp.downcase
       case response
+<<<<<<< HEAD
       when "list songs"
         list_songs
         break
@@ -40,11 +41,21 @@ class MusicLibraryController
         play_song
         break
       when "exit"
+=======
+      when response == "list songs"
+      when response == "list artists"
+      when response == "list genres"
+      when response == "list artist"
+      when response == "list genre"
+      when response == "play song"
+      when response == "exit"
+>>>>>>> cf752401fbed1d3cd6315558d8d4c9d55a4e8e26
         break
       end
     end
   end
 
+<<<<<<< HEAD
   def list_songs
     i = 0
     songs = Song.all.sort_by { |song| song.name }
@@ -111,4 +122,6 @@ class MusicLibraryController
     end
   end
 
+=======
+>>>>>>> cf752401fbed1d3cd6315558d8d4c9d55a4e8e26
 end
